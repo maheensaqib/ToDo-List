@@ -1,0 +1,182 @@
+.outer-div{
+    margin: 0 auto;
+    width: 500px;        
+    height: 550px; 
+    background-color: rgb(231, 235, 240);
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    margin: 0 0.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.main-heading{
+    margin: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+.input{
+    margin: 0 0.5rem;
+    display: flex;
+    position: relative;
+}
+.input-box{
+    /* padding: 1.2rem 9rem; */
+    width: 100%;
+    height: 50px;
+    border-radius: 0.2rem;
+    border: none;
+    /* box-shadow: 0 0 20px 0 #0f0f0f; */
+    /* align-content: flex-start; */
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 100px; 
+    padding-left: 20px;
+    outline: none;
+    border-bottom:  1.5px solid rgb(192, 190, 190);
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+.add-btn{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  background-color: rgb(25, 118, 210);;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 18px;
+  z-index: 1;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+.fa-file{
+    padding-top: 14px;
+    font-size: 25px;
+    color: rgb(148, 147, 147);
+}
+.uncomplete-task{
+    height: 50px;
+    border-radius: 0.2rem;
+    border: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 20px; 
+    padding-left: 20px;
+    outline: none;
+    border-bottom:  1.5px solid rgb(192, 190, 190);
+    margin: 20px 0.5rem;
+    display: flex;
+    background-color: white;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+.para{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fa-circle-check{
+    padding-top: 16px;
+    font-size: 20px;
+    color: rgb(148, 147, 147);
+    margin-left: auto;
+    cursor: pointer;
+}
+.fa-circle-check:active{
+     color: green;
+}
+.fa-trash{
+        padding-top: 16px;
+    font-size: 20px;
+    color: rgb(148, 147, 147);
+    margin-left: 15px;
+    cursor: pointer;
+}
+.complete-task{
+    height: 50px;
+    border-radius: 0.2rem;
+    border: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 20px; 
+    padding-left: 20px;
+    outline: none;
+    border-bottom:  1.5px solid rgb(192, 190, 190);
+    margin: 0px 0.5rem;
+    display: flex;
+    background-color: white;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+.complete-task .fa-file{
+     padding-top: 14px;
+    font-size: 25px;
+    color: green;
+}
+.complete-task .para{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: line-through;
+    color: green;
+}
+.complete-task .fa-circle-check{
+    padding-top: 16px;
+    font-size: 20px;
+    color: green;
+    margin-left: auto;
+    cursor: pointer;
+}
+.bottom-container{
+    height: 50px;
+    border-radius: 0.2rem;
+    border: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 20px; 
+    padding-left: 20px;
+    outline: none;
+    border-bottom:  1.5px solid rgb(192, 190, 190);
+    margin: 20px 0.5rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    margin-top: auto;
+}
+.delete{
+    width: 100px;
+    height: 40px;
+  background-color: rgb(205, 1, 1);;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+@media screen and  (max-width: 600px){
+    .outer-div{
+    width: 95%;    
+    height: 550px;    
+    }
+    .heading{
+        text-align: center;
+    }
+   .fa-circle-check,
+    .fa-trash {
+        right: 15px; /* tighter on small screens */
+    }
+
+    .para {
+        margin-right: 0; /* allow full overlap if needed */
+    }
+}
