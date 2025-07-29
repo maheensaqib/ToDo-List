@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>To-Do List</title>
     <script src="https://kit.fontawesome.com/1d340923fb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="outer-div">
-    <div class="heading">
-        <p class="main-heading">MyTodo List</p>
+    <div class="outer-div">
+        <div class="heading">
+            <p class="main-heading">MyTodo List</p>
+        </div>
+        <div class="input">
+            <input type="text" class="input-box" placeholder="Enter a task" id="tasks">
+            <button class="add-btn" onclick="addtask()" id="btn" >Add</button>
+        </div>
+        <div id="mid">
+            <!-- area for the dynamically added divs -->
+        </div>
+        <div class="bottom-container">
+            <p>Total Task: <span id="task-count">0</span></p>
+            <button class="delete" type="submit" onclick="deleteAllTasks()">DELETE ALL</button>
+        </div>
     </div>
-    <div class="input">
-        <input type="text" class="input-box" placeholder="Enter a task">
-        <button class="add-btn" type="submit">Add</button>
-    </div>
-    <div class="uncomplete-task">
-        <i class="fa-solid fa-file"></i>
-        <p class="para">Finish the Project</p>
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-trash"></i>
-    </div>
-        <div class="complete-task">
-        <i class="fa-solid fa-file"></i>
-        <p class="para">Work Out</p>
-        <i class="fa-solid fa-circle-check"></i>
-        <i class="fa-solid fa-trash"></i>
-    </div>
-    <div class="bottom-container">
-        <p>Total Task:</p>
-        <button class="delete" type="submit">DELETE ALL</button>
-    </div>
-</div>
+    <button id="theme" onclick="changing()">Change Theme</button>
+    <script src="index.js"></script>
 </body>
+
 </html>
